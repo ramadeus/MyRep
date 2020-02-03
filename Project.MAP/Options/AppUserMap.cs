@@ -13,7 +13,7 @@ namespace Project.MAP.Options
         {
             Property(x => x.UserName).HasColumnName("Kullanıcı Adı").IsRequired();
             Property(x => x.Password).HasColumnName("Sifre").IsRequired();
-            Property(x => x.Email).HasColumnName("E mail").IsRequired();
+            Property(x => x.Email).HasColumnName("E mail");
             HasOptional(x => x.AppUserDetail).WithRequired(x => x.AppUser);
             ToTable("Kullanıcılar");
         }

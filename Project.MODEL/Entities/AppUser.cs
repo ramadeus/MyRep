@@ -8,6 +8,16 @@ namespace Project.MODEL.Entities
 {
    public class AppUser:BaseEntity
     {
+        public AppUser()
+        {
+
+        }
+        public AppUser(string uname,string pwd)
+        {
+            UserName = uname;
+            Password = pwd;
+
+        }
         public string UserName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
